@@ -1,11 +1,12 @@
-import * as React from 'react'
+import React from 'react'
+import { Box } from 'theme-ui'
 
 interface ExampleProps {
   text: string
 }
 
-const Example: React.FunctionComponent<ExampleProps> = ({ text }: ExampleProps) => {
-  return <div>Example Component: {text}</div>
+const Example = ({ text }: ExampleProps) => {
+  return <Box sx={{ fontSize: 0 }}>Example Components: {text}</Box>
 }
 
 export { Example, ExampleProps }
