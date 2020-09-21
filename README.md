@@ -2,25 +2,11 @@
 
 > Sample styleguide built with theme-ui.
 
-## Install
+## Running locally :rocket:
 
-```bash
-yarn add andromeda
-```
+### Storybook
 
-## Usage
-
-```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'andromeda'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
+Run `yarn` to install the dependencies, and then `yarn storybook` to run Storybook. It should run on http://localhost:6006/! 
 
 ## License
 
