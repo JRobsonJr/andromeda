@@ -3,11 +3,9 @@ import { Box, Input as BaseInput, Label, Text } from 'theme-ui'
 
 const Input = ({ id, label, helperText }: InputProps) => (
   <Box sx={{ width: 'fit-content' }}>
-    <Label htmlFor={id} sx={{ fontSize: 1, marginBottom: 1 }}>
-      {label}
-    </Label>
+    <Label htmlFor={id}>{label}</Label>
     <BaseInput id={id} placeholder={label} />
-    <Text sx={{ fontSize: 0, marginTop: 1 }}>{helperText}</Text>
+    <Text variant="default" sx={{ marginTop: 1, color: 'helperText' }}>{helperText}</Text>
   </Box>
 )
 
